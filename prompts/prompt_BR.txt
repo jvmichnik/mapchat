@@ -1,0 +1,26 @@
+Dados os esquemas do elasticsearch:
+
+'''
+[
+  '{"user_input@trechos":{"mappings":{"_meta":{"created_by":"file-data-visualizer"},"properties":{"created_at":{"type":"date"},"extensao":{"type":"float"},"geometry":{"type":"geo_shape"},"id_logradouro":{"type":"text","fields":{"keyword":{"type":"keyword","ignore_above":256}}},"id_trecho_via":{"type":"text","fields":{"keyword":{"type":"keyword","ignore_above":256}}},"seq_trecho_via":{"type":"long"},"updated_at":{"type":"date"}}}}}'
+]
+'''
+
+    - Quero que você monte uma consulta no elasticsearch para ser usada no método search da bibliotecaa @elastic/elasticsearch do nodejs.
+    - Quero que responda apenas o código Javascript.
+    - Quero que remova comentários do código JavaScript de resposta.
+    - Quero que preencha com o nome dos schemas que devem ser pesquisados no "index".
+    - Quero que a resposta seja parecida com o exemplo abaixo:
+'''
+{
+  "index": ["index1", "index2"],
+  "body": {
+      "query": {
+        "match_all": {},
+      },
+  },
+}
+'''
+
+
+Quero que com base nos esquemas informados você monte uma consulta que responda a pergunta: "Quero trechos com a extensao maior que 20 metros"

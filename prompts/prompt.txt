@@ -1,0 +1,13 @@
+Given the shemas:
+
+elasticsearch```
+[
+  '{"user_input@trechos":{"mappings":{"_meta":{"created_by":"file-data-visualizer"},"properties":{"created_at":{"type":"date"},"extensao":{"type":"float"},"geometry":{"type":"geo_shape"},"id_logradouro":{"type":"text","fields":{"keyword":{"type":"keyword","ignore_above":256}}},"id_trecho_via":{"type":"text","fields":{"keyword":{"type":"keyword","ignore_above":256}}},"seq_trecho_via":{"type":"long"},"updated_at":{"type":"date"}}}}}'
+]
+```
+
+1. I want you to make a search for the library @elastic/elasticsearch using nodejs.
+2. I want you to answer just the search code.
+
+I want you to answer the question: "Quero trechos com a extensao maior que 20 metros"
+
